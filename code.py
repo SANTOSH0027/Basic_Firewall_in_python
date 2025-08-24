@@ -17,8 +17,7 @@ def main():
     for _ in range(10):
         ip_address = getrandom_ip()
         action = check_rules(ip_address, firewall_rules)
-        random_number = random.randint(0, 9999)
-        print(f"IP:{ip_address},Action:{action},Random:{random_number}")
+        print(f"IP:{ip_address},Action:{action}")
 
 
 def getrandom_ip():
